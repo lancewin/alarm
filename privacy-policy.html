@@ -63,7 +63,7 @@
     <h2>权限使用</h2>
     <ul>
         <li><span class="highlight">闹钟权限（NSAlarmKitUsageDescription）</span>：用于通过 AlarmKit 实现系统级闹钟调度，确保在静音和勿扰模式下也能按时响铃</li>
-        <li><span class="highlight">音乐库权限（NSAppleMusicUsageDescription）</span>：仅在选择自定义铃声时使用，访问音乐库以便您挑选歌曲作为闹钟铃声</li>
+        <li><span class="highlight">文件导入（系统「文件」App / 分享面板）</span>：选择自定义铃声时，应用会读取您主动选择的音频文件，并在设备本地转码、存储为闹钟铃声（存于 App 沙盒 Library/Sounds）。音频文件仅保存在您的设备上，绝不上传服务器，也不用于其他用途</li>
     </ul>
     
     <h2>订阅与支付</h2>
@@ -83,6 +83,7 @@
     <h2>数据存储</h2>
     <ul>
         <li>所有闹钟数据存储在设备本地（SwiftData）</li>
+        <li>您从「文件」App 或分享面板导入的自定义铃声音频文件保存在设备本地（Library/Sounds），随应用卸载一并清除</li>
         <li>卸载应用后本地数据全部清除</li>
     </ul>
     
