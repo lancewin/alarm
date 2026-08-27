@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Assistance</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Assistance</h1>
+
+    <h2>Fonctions</h2>
+    <h3>Alarme</h3>
+    <ul>
+        <li>Planification système AlarmKit ; sonne en mode silencieux et Ne pas déranger</li>
+        <li>Gestion de plusieurs alarmes : créer, éditer, supprimer, activer, désactiver</li>
+        <li>Sonnerie par date : une ou plusieurs dates par alarme — sonne exactement les jours choisis à l'heure réglée</li>
+        <li>Sélection rapide : un mois/une année de jours ouvrés, week-ends ou toutes les dates en un tap</li>
+        <li>Report : intervalle 1–30 min et nombre max configurables</li>
+        <li>Sonnerie : défaut système + perso depuis Fichiers/partage (mp3/m4a/wav/aiff/caf, boucle ≤30 s)</li>
+        <li>Vibration : seule ou avec la sonnerie</li>
+    </ul>
+    <h3>Alarme temporaire</h3>
+    <ul>
+        <li>Rappel unique supprimé après la sonnerie</li>
+        <li>Catégories : réunion, vente flash, cuisine, accueil, perso</li>
+        <li>Idéal pour les occasions ponctuelles</li>
+    </ul>
+    <h3>Widget</h3>
+    <ul>
+        <li>Affiche la prochaine alarme sur l'écran d'accueil</li>
+        <li>Données partagées via App Group, visibles sans ouvrir l'app</li>
+        <li>Disponible en petits, moyens et grands formats</li>
+    </ul>
+    <h3>Comment ajouter le widget à l'écran d'accueil</h3>
+    <ol>
+        <li>Déverrouillez l'iPhone et appuyez longuement sur une zone vide de l'écran d'accueil (ou sur un widget existant) jusqu'à ce que les icônes tremblent et passe en "mode édition".</li>
+        <li>Appuyez sur le bouton <span class="highlight">"+"</span> en haut à gauche pour ouvrir la galerie de widgets.</li>
+        <li>Dans la recherche, tapez "<span class="highlight">CalAlarm</span>" (ou faites défiler jusqu'à l'app) et ouvrez sa liste de widgets.</li>
+        <li>Glissez sous "Prochaine alarme" pour voir les formats <span class="highlight">petit／moyen／grand</span> puis appuyez sur "Ajouter le widget".</li>
+        <li>Le widget apparaît en flottant sur l'écran d'accueil : glissez-le où vous voulez puis appuyez sur "Terminé" en haut à droite.</li>
+    </ol>
+    <p>Une fois ajouté, le widget affiche l'heure et le compte à rebours de la prochaine alarme, et se met à jour seul selon les alarmes définies dans l'app (données synchronisées via App Group, sans ouvrir l'app). S'il n'affiche rien, ouvrez l'app une fois pour synchroniser.</p>
+
+    <h2>Adhésion</h2>
+    <ul>
+        <li>Sonnerie à plusieurs dates (Pro) : plusieurs jours sur la même alarme</li>
+        <li>Gratuit jusqu'à 5 alarmes ; Pro illimité</li>
+        <li>Alarmes à date unique, sonneries perso, temporaires, report, vibration, widget sont gratuits pour tous</li>
+    </ul>
+
+    <h2>Gestion d'abonnement</h2>
+    <ul>
+        <li>Mensuel/trimestriel/annuel ; annuel avec 14 jours d'essai, auto, résiliable</li>
+        <li>Renouvellement auto, résiliable à tout moment</li>
+        <li>Réglages → Apple ID → Abonnements</li>
+        <li>"Restaurer les achats" récupère l'adhésion</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>Q: Sonne en mode silencieux ?</h3>
+    <p>A: Oui. Alarmes système AlarmKit, sonne en silencieux et Ne pas déranger.</p>
+    <h3>Q: Sonne après fermeture ?</h3>
+    <p>A: Oui. Les alarmes système sonnent à l'heure même si l'app est fermée.</p>
+    <h3>Q: Renouvellement auto ?</h3>
+    <p>A: Automatique 24 h avant la fin, via le paiement de votre Apple ID. Annulez 24 h avant pour éviter le renouvellement.</p>
+    <h3>Q: Résilier ?</h3>
+    <p>A: Réglages → Apple ID → Abonnements, choisir l'app et "Résilier". Avantages conservés jusqu'à la fin.</p>
+    <h3>Q: Restaurer ?</h3>
+    <p>A: "Restaurer les achats" vérifie l'Apple ID et restaure l'adhésion.</p>
+    <h3>Q: Essai gratuit ?</h3>
+    <p>A: 14 jours pour les nouveaux abonnés annuels. Annulable sans frais pendant l'essai. Puis abonnement payant auto.</p>
+    <h3>Q: Données envoyées ?</h3>
+    <p>A: Non. Toutes les données restent localement (SwiftData).</p>
+    <h3>Q: Importer ma sonnerie ?</h3>
+    <p>A: "Choisir la sonnerie" → "Importer depuis Fichiers" (mp3/m4a/wav/aiff/caf). Ou feuille de partage → "Copier vers CalAlarm". Audio transcodé localement en boucle ≤30 s, sonne même app fermée. Apple Music (DRM) non importable.</p>
+    <h3>Q: "Sonner seulement ces jours" ?</h3>
+    <p>A: Éditeur d'alarme → "Date de sonnerie" → sélectionner un ou plusieurs jours (ou sélection rapide mois/année). Plusieurs dates est Pro.</p>
+    <h3>Q: Le widget affiche "Aucune alarme" ou ne se met pas à jour</h3>
+    <p>A: Les données du widget sont synchronisées avec l'app via App Group. Ouvrez l'app une fois pour synchroniser puis revenez à l'écran d'accueil. S'il ne s'actualise toujours pas, appuyez longuement sur le widget et choisissez "Recharger", ou retirez-le et rajoutez-le. Le widget s'actualise seul toutes les 15 minutes ; iOS 16 ou plus requis.</p>
+    <h3>Q: Quels formats le widget prend-il en charge ?</h3>
+    <p>A: Petit, moyen et grand : le petit affiche seulement l'heure de la prochaine alarme ; le moyen et le grand ajoutent le compte à rebours et le libellé, et le grand ajoute un rappel pour gérer l'alarme dans l'app.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Contact : lancewin@foxmail.com</p>
+</body>
+</html>

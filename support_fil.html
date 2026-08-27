@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Suporta</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Suporta</h1>
+
+    <h2>Mga feature</h2>
+    <h3>Alarm</h3>
+    <ul>
+        <li>System-level scheduling via AlarmKit; tumutunog sa silent at Do Not Disturb</li>
+        <li>Maramihang alarm: gumawa, i-edit, tanggalin, i-on, i-off</li>
+        <li>Tumunog ayon sa petsa: isa o higit pang petsa bawat alarm — tumutunog eksakto sa mga piniling araw</li>
+        <li>Mabilis na pili: isang buwan/taon ng weekdays, weekend o lahat ng petsa sa isang tap</li>
+        <li>Snooze: 1–30 min interval at max na nai-configure</li>
+        <li>Ringtone: default + sariling mula sa Files/share (mp3/m4a/wav/aiff/caf, loop ≤30 s)</li>
+        <li>Vibrate: mag-isa o kasama ang ringtone</li>
+    </ul>
+    <h3>Temporary alarm</h3>
+    <ul>
+        <li>One-time reminder na awtomatikong natanggal pagkatunog</li>
+        <li>Mga category: meeting, flash sale, luto, sunduin, custom</li>
+        <li>Para sa one-time na sitwasyon</li>
+    </ul>
+    <h3>Widget</h3>
+    <ul>
+        <li>Ipinapakita ang susunod na alarm sa home screen</li>
+        <li>Data via App Group, nakikita nang hindi binubuksan ang app</li>
+        <li>May maliit, katamtaman at malaking size</li>
+    </ul>
+    <h3>Paano magdagdag ng widget sa home screen</h3>
+    <ol>
+        <li>I-unlock ang iPhone at pindutin nang matagal ang blankong bahagi ng home screen (o anumang widget) hanggang manginig ang mga icon at pumasok sa "edit mode".</li>
+        <li>Pindutin ang <span class="highlight">"+"</span> sa kaliwa para buksan ang widget gallery.</li>
+        <li>Sa search, i-type "<span class="highlight">CalAlarm</span>" (o mag-scroll sa app) at buksan ang listahan ng widget nito.</li>
+        <li>Mag-swipe sa ilalim ng "Susunod na alarm" para makita ang <span class="highlight">maliit／katamtaman／malaki</span> na size, tapos pindutin "Add Widget".</li>
+        <li>Lalabas ang widget sa home screen: i-drag sa gustong lugar at pindutin "Done" sa kanan.</li>
+    </ol>
+    <p>Kapag nadagdag, ipinapakita ng widget ang oras at countdown ng susunod na alarm, at awtomatikong naga-update ayon sa mga alarm sa app (data via App Group, hindi kailangang buksan ang app). Kung walang data, buksan ang app minsan para mag-sync.</p>
+
+    <h2>Subscription</h2>
+    <ul>
+        <li>Buwanan/quarterly/taonan; taonan 14 araw libre, auto, kansel anumang oras</li>
+        <li>Auto-renew, kansel anumang oras</li>
+        <li>Settings → Apple ID → Subscriptions</li>
+        <li>"Restore Purchases" muling kunin ang membership</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>Q: Tumutunog sa silent?</h3>
+    <p>A: Oo. Ang system alarm na AlarmKit ay tumutunog sa silent at Do Not Disturb.</p>
+    <h3>Q: Tumutunog pagkasara?</h3>
+    <p>A: Oo. Tumutunog nang eksakto kahit sarado ang app.</p>
+    <h3>Q: Auto-renew?</h3>
+    <p>A: Awtomatiko 24 oras bago matapos via Apple ID. Kansel 24 oras agi.</p>
+    <h3>Q: Kansel?</h3>
+    <p>A: Settings → Apple ID → Subscriptions, piliin ang app at "Cancel Subscription". Benefit hanggang katapusan ng period.</p>
+    <h3>Q: I-restore?</h3>
+    <p>A: "Restore Purchases" ine-verify ang Apple ID at ibinabalik ang membership.</p>
+    <h3>Q: Libreng trial?</h3>
+    <p>A: 14 araw para sa bagong taonang subscriber. Kansel nang walang singil. Pagkatapos ay bayad na.</p>
+    <h3>Q: Na-upload ang datos?</h3>
+    <p>A: Hindi. Lahat ay lokal (SwiftData).</p>
+    <h3>Q: I-import ang sariling ringtone?</h3>
+    <p>A: "Piliin ang ringtone" → "Import mula sa Files" (mp3/m4a/wav/aiff/caf). O share → "Kopyahin sa CalAlarm". Ang audio ay transcode nang lokal sa loop ≤30 s, tumutunog kahit sarado. Apple Music (DRM) hindi ma-import.</p>
+    <h3>Q: "Tumunog lang sa araw na ito"?</h3>
+    <p>A: Editor → "Ring date" → piliin isa o higit pang petsa (o mabilis na pili buwan/taon). Maraming petsa ay Pro.</p>
+    <h3>Q: Ang widget ay "Walang alarm" o hindi nag-a-update</h3>
+    <p>A: Ang data ng widget ay naka-sync sa app via App Group. Buksan ang app minsan para mag-sync, pagkatapos bumalik sa home screen. Kung hindi pa nag-a-update, pindutin nang matagal ang widget at piliin "Reload", o tanggalin at idagdag muli. Awtomatikong nag-a-update ang widget tuwing 15 minuto; kailangan ang iOS 16 pataas.</p>
+    <h3>Q: Anong size ang sinusuportahan ng widget?</h3>
+    <p>A: Maliit, katamtaman at malaki: ang maliit ay nagpapakita lang ng oras ng susunod na alarm; ang katamtaman at malaki ay may countdown at label, ang malaki ay may paalala para i-manage ang alarm sa app.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Contact: lancewin@foxmail.com</p>
+</body>
+</html>

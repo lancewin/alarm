@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Hỗ trợ</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Hỗ trợ</h1>
+
+    <h2>Tính năng</h2>
+    <h3>Báo thức</h3>
+    <ul>
+        <li>Lên lịch hệ thống AlarmKit; reo ở chế độ im lặng và Không làm phiền</li>
+        <li>Nhiều báo thức: tạo, sửa, xóa, bật, tắt</li>
+        <li>Reo theo ngày: một hoặc nhiều ngày mỗi báo thức — reo đúng những ngày bạn chọn</li>
+        <li>Chọn nhanh: một tháng/năm ngày làm việc, cuối tuần hoặc mọi ngày chỉ một chạm</li>
+        <li>Báo lại: khoảng 1–30 phút và số lần tối đa tùy chỉnh</li>
+        <li>Nhạc chuông: mặc định + riêng từ Tệp/chia sẻ (mp3/m4a/wav/aiff/caf, vòng lặp ≤30 s)</li>
+        <li>Rung: riêng hoặc cùng nhạc chuông</li>
+    </ul>
+    <h3>Báo thức tạm</h3>
+    <ul>
+        <li>Nhắc một lần, tự xóa sau khi reo</li>
+        <li>Phân loại: họp, flash sale, nấu ăn, đón, tùy chỉnh</li>
+        <li>Cho tình huống một lần</li>
+    </ul>
+    <h3>Tiện ích</h3>
+    <ul>
+        <li>Hiển thị báo thức tiếp theo trên màn hình chính</li>
+        <li>Dữ liệu qua App Group, xem không cần mở app</li>
+        <li>Có kích thước nhỏ, vừa và lớn</li>
+    </ul>
+    <h3>Cách thêm tiện ích vào màn hình chính</h3>
+    <ol>
+        <li>Mở khóa iPhone và nhấn giữ vùng trống trên màn hình chính (hoặc tiện ích bất kỳ) cho đến khi biểu tượng rung và vào "chế độ chỉnh sửa".</li>
+        <li>Nhấn nút <span class="highlight">"+"</span> góc trái trên để mở thư viện tiện ích.</li>
+        <li>Trong tìm kiếm, gõ "<span class="highlight">CalAlarm</span>" (hoặc cuộn đến app) và mở danh sách tiện ích của nó.</li>
+        <li>Vuốt dưới "Báo thức tiếp theo" để xem các kích thước <span class="highlight">nhỏ／vừa／lớn</span> rồi nhấn "Thêm tiện ích".</li>
+        <li>Tiện ích xuất hiện nổi trên màn hình chính: kéo đến vị trí mong muốn rồi nhấn "Xong" góc phải trên.</li>
+    </ol>
+    <p>Sau khi thêm, tiện ích hiển thị giờ và đếm ngược báo thức tiếp theo, tự cập nhật theo báo thức bạn đặt trong app (dữ liệu qua App Group, không cần mở app). Nếu không hiện dữ liệu, hãy mở app một lần để đồng bộ.</p>
+
+    <h2>Đăng ký</h2>
+    <ul>
+        <li>Tháng/quý/năm; năm 14 ngày dùng thử, tự động, hủy bất cứ lúc nào</li>
+        <li>Tự động gia hạn, hủy bất cứ lúc nào</li>
+        <li>Cài đặt → Apple ID → Đăng ký</li>
+        <li>"Khôi phục mua" lấy lại quyền thành viên</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>Q: Reo ở chế độ im lặng?</h3>
+    <p>A: Có. Báo thức hệ thống AlarmKit reo ở im lặng và Không làm phiền.</p>
+    <h3>Q: Reo sau khi đóng app?</h3>
+    <p>A: Có. Reo đúng giờ dù app đã đóng.</p>
+    <h3>Q: Tự động gia hạn?</h3>
+    <p>A: Tự động 24 h trước khi hết hạn qua Apple ID. Hủy trước 24 h.</p>
+    <h3>Q: Hủy?</h3>
+    <p>A: Cài đặt → Apple ID → Đăng ký, chọn app và "Hủy". Quyền đến hết kỳ.</p>
+    <h3>Q: Khôi phục?</h3>
+    <p>A: "Khôi phục mua" xác minh Apple ID và khôi phục.</p>
+    <h3>Q: Dùng thử miễn phí?</h3>
+    <p>A: 14 ngày cho thuê bao năm mới. Hủy không mất phí. Sau đó thu phí.</p>
+    <h3>Q: Dữ liệu tải lên?</h3>
+    <p>A: Không. Mọi thứ cục bộ (SwiftData).</p>
+    <h3>Q: Nhập nhạc riêng?</h3>
+    <p>A: "Chọn nhạc chuông" → "Nhập từ Tệp" (mp3/m4a/wav/aiff/caf). Hoặc chia sẻ → "Sao chép vào CalAlarm". Âm thanh chuyển mã cục bộ vòng lặp ≤30 s, reo dù app đóng. Apple Music (DRM) không nhập được.</p>
+    <h3>Q: "Chỉ reo những ngày này"?</h3>
+    <p>A: Trình sửa → "Ngày reo" → chọn một hoặc nhiều ngày (hoặc chọn nhanh tháng/năm). Nhiều ngày là Pro.</p>
+    <h3>Q: Tiện ích hiện "Không có báo thức" hoặc không cập nhật</h3>
+    <p>A: Dữ liệu tiện ích được đồng bộ với app qua App Group. Hãy mở app một lần để đồng bộ rồi quay lại màn hình chính. Nếu vẫn không cập nhật, nhấn giữ tiện ích và chọn "Tải lại", hoặc xóa rồi thêm lại. Tiện ích tự cập nhật mỗi 15 phút; yêu cầu iOS 16 trở lên.</p>
+    <h3>Q: Tiện ích hỗ trợ kích thước nào?</h3>
+    <p>A: Nhỏ, vừa và lớn: nhỏ chỉ hiện giờ báo thức tiếp theo; vừa và lớn thêm đếm ngược và nhãn, lớn thêm gợi ý quản lý báo thức trong app.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Liên hệ: lancewin@foxmail.com</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Support</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Support</h1>
+
+    <h2>Funktionsbeschreibung</h2>
+    <h3>Alarm</h3>
+    <ul>
+        <li>Systemweite Alarmplanung über AlarmKit; klingelt im Stillen Modus und bei Nicht-Stören</li>
+        <li>Mehrere Alarme verwalten: erstellen, bearbeiten, löschen, aktivieren, deaktivieren</li>
+        <li>Nach Datum klingeln: jedem Alarm einen oder mehrere Ringtage zuweisen — klingelt genau an den gewählten Tagen zur eingestellten Zeit</li>
+        <li>Schnellauswahl von Daten: einen Monat oder ein Jahr an Wochentagen, Wochenenden oder allen Tagen mit einem Tap markieren</li>
+        <li>Schlummern: 1–30 Minuten Intervall und maximale Anzahl konfigurierbar</li>
+        <li>Klingelton: Systemstandard + eigene Töne aus "Dateien" oder dem Teilen-Sheet (mp3/m4a/wav/aiff/caf, auf ≤30 s Loop zugeschnitten)</li>
+        <li>Vibration: allein oder mit Klingelton</li>
+    </ul>
+    <h3>Temporärer Alarm</h3>
+    <ul>
+        <li>Einmalige Erinnerung, die nach dem Klingeln automatisch gelöscht wird</li>
+        <li>Vordefinierte Kategorien: Meeting, Blitzverkauf, Kochen, Abholen, benutzerdefiniert</li>
+        <li>Ideal für einmalige Anlässe ohne die normale Liste zu füllen</li>
+    </ul>
+    <h3>Widget</h3>
+    <ul>
+        <li>Das Homescreen-Widget zeigt die nächste Alarmzeit</li>
+        <li>Daten werden über App Group geteilt, ohne App sichtbar</li>
+        <li>Verfügbar in klein, mittel und groß</li>
+    </ul>
+    <h3>Widget zum Home-Bildschirm hinzufügen</h3>
+    <ol>
+        <li>Entsperren Sie das iPhone und drücken Sie lange auf eine leere Stelle des Home-Bildschirms (oder auf ein vorhandenes Widget), bis die Symbole wackeln und der "Bearbeitungsmodus" erscheint.</li>
+        <li>Tippen Sie oben links auf den <span class="highlight">"+"</span>-Button, um die Widget-Galerie zu öffnen.</li>
+        <li>Geben Sie im Suchen-Feld "<span class="highlight">CalAlarm</span>" ein (oder scrollen Sie zur App) und öffnen Sie deren Widget-Liste.</li>
+        <li>Wischen Sie unter "Nächster Alarm" durch die Größen <span class="highlight">klein／mittel／groß</span> und tippen Sie auf "Widget hinzufügen".</li>
+        <li>Das Widget erscheint schwebend auf dem Home-Bildschirm: ziehen Sie es an die gewünschte Stelle und tippen Sie oben rechts auf "Fertig".</li>
+    </ol>
+    <p>Nach dem Hinzufügen zeigt das Widget die Zeit und den Countdown des nächsten Alarms und aktualisiert sich automatisch mit den in der App gesetzten Alarmen (Daten via App Group, ohne App zu öffnen). Zeigt es nichts an, öffnen Sie die App einmal zur Synchronisierung.</p>
+
+    <h2>Mitgliedschaft</h2>
+    <ul>
+        <li>Mehrere Ringtage (Pro): mehrere Tage am selben Alarm</li>
+        <li>Kostenlos bis 5 Alarme; Pro entfernt das Limit</li>
+        <li>Einzel-Datum-Alarme, eigene Töne, temporäre Alarme, Schlummern, Vibration und Widget sind für alle kostenlos</li>
+    </ul>
+
+    <h2>Abo-Verwaltung</h2>
+    <ul>
+        <li>Monatlich/vierteljährlich/jährlich; Jahresplan mit 14 Tagen Test, auto-Verlängerung, jederzeit kündbar</li>
+        <li>Abos verlängern sich automatisch und sind jederzeit kündbar</li>
+        <li>Verwalten unter Einstellungen → Apple-ID → Abos</li>
+        <li>"Käufe wiederherstellen" ruft erworbene Mitgliedschaft ab</li>
+    </ul>
+
+    <h2>Häufige Fragen</h2>
+    <h3>Q: Klingelt es im Stillen Modus?</h3>
+    <p>A: Ja. Systemweite AlarmKit-Alarme klingeln im Stillen Modus und bei Nicht-Stören.</p>
+    <h3>Q: Klingelt es nach App-Schluss?</h3>
+    <p>A: Ja. Systemweite Alarme klingeln pünktlich, selbst wenn die App geschlossen ist.</p>
+    <h3>Q: Wie verlängert sich das Abo?</h3>
+    <p>A: Automatisch innerhalb von 24 Stunden vor Periodenende, über die an Ihre Apple-ID gebundene Zahlung. Zum Stoppen mindestens 24 Stunden vorher kündigen.</p>
+    <h3>Q: Wie kündige ich?</h3>
+    <p>A: Einstellungen → Apple-ID → Abos, App wählen und "Abo kündigen". Vorteile bleiben bis Periodenende.</p>
+    <h3>Q: Käufe wiederherstellen?</h3>
+    <p>A: Auf der Abo-Seite "Käufe wiederherstellen" tippen; die Apple-ID wird geprüft und die Mitgliedschaft wiederhergestellt.</p>
+    <h3>Q: Wie läuft die Testphase?</h3>
+    <p>A: Neu-Abonnenten des Jahresplans erhalten 14 Tage kostenlos. Während der Testphase jederzeit kündbar ohne Belastung. Danach startet das kostenpflichtige Abo automatisch.</p>
+    <h3>Q: Werden Daten hochgeladen?</h3>
+    <p>A: Nein. Alle Alarmdaten bleiben nur lokal auf Ihrem Gerät (SwiftData).</p>
+    <h3>Q: Eigenen Klingelton importieren?</h3>
+    <p>A: Bei "Klingelton wählen" → "Aus Dateien importieren" Audio (mp3/m4a/wav/aiff/caf) wählen. Oder das System-Teilen-Sheet nutzen und "Kopieren nach CalAlarm" wählen. Das Audio wird lokal zu einem ≤30 s Loop umgewandelt und auf dem Gerät gespeichert, klingt also auch bei geschlossener App. DRM-geschützte Apple Music-Titel sind nicht importierbar.</p>
+    <h3>Q: "Nur an diesen Tagen" einstellen?</h3>
+    <p>A: Im Alarmeditor "Ringtag" tippen, den Datumswähler öffnen und einen oder mehrere Tage markieren (oder Schnellauswahl eines Monats/Jahres an Wochentagen/Wochenenden/allen). Mehrere Ringtage ist eine Pro-Funktion.</p>
+    <h3>Q: Widget zeigt "Kein Alarm" oder aktualisiert nicht</h3>
+    <p>A: Die Widget-Daten werden über App Group mit der App synchronisiert. Öffnen Sie die App einmal zur Synchronisierung und kehren Sie zum Home-Bildschirm zurück. Aktualisiert es sich weiterhin nicht, drücken Sie lange auf das Widget und wählen "Neu laden", oder entfernen und fügen Sie es erneut hinzu. Das Widget aktualisiert sich alle 15 Minuten automatisch; iOS 16 oder neuer nötig.</p>
+    <h3>Q: Welche Größen unterstützt das Widget?</h3>
+    <p>A: Klein, mittel und groß: klein zeigt nur die nächste Alarmzeit; mittel und groß zeigen zusätzlich Countdown und Label, groß ergänzt einen Hinweis zur Verwaltung in der App.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Kontakt: lancewin@foxmail.com</p>
+</body>
+</html>

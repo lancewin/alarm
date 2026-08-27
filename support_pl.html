@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Pomoc</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Pomoc</h1>
+
+    <h2>Funkcje</h2>
+    <h3>Alarm</h3>
+    <ul>
+        <li>Planowanie systemowe AlarmKit; dzwoni w cichym i Nie przeszkadzać</li>
+        <li>Kilka alarmów: utwórz, edytuj, usuń, włącz, wyłącz</li>
+        <li>Dzwonienie według daty: jedna lub więcej dat na alarm — dzwoni dokładnie wybranymi dniami</li>
+        <li>Szybki wybór: miesiąc/rok dni roboczych, weekendów lub wszystkich dat jednym dotknięciem</li>
+        <li>Drzemka: interwał 1–30 min i maksimum konfigurowalne</li>
+        <li>Dzwonek: domyślny + własny z Plików/udostępniania (mp3/m4a/wav/aiff/caf, pętla ≤30 s)</li>
+        <li>Wibracja: osobno lub z dzwonkiem</li>
+    </ul>
+    <h3>Alarm tymczasowy</h3>
+    <ul>
+        <li>Jednorazowe przypomnienie usuwane po zadzwonieniu</li>
+        <li>Kategorie: spotkanie, flash sale, gotowanie, odbiór, własne</li>
+        <li>Do okazjonalnych sytuacji</li>
+    </ul>
+    <h3>Widżet</h3>
+    <ul>
+        <li>Pokazuje następny alarm na ekranie głównym</li>
+        <li>Dane przez App Group, widoczne bez otwierania appki</li>
+        <li>Dostępny w małym, średnim i dużym rozmiarze</li>
+    </ul>
+    <h3>Jak dodać widżet na ekran główny</h3>
+    <ol>
+        <li>Odblokuj iPhone i przytrzymaj pusty obszar ekranu głównego (lub dowolny widżet), aż ikony zaczną drgać i wejdą w "tryb edycji".</li>
+        <li>Stuknij przycisk <span class="highlight">"+"</span> w lewym górnym rogu, aby otworzyć galerię widżetów.</li>
+        <li>W wyszukiwarce wpisz "<span class="highlight">CalAlarm</span>" (lub przewiń do appki) i otwórz jej listę widżetów.</li>
+        <li>Przesuń pod "Następny alarm", by zobaczyć rozmiary <span class="highlight">mały／średni／duży</span>, a następnie stuknij "Dodaj widżet".</li>
+        <li>Widżet pojawi się na ekranie głównym w stanie unoszenia: przeciągnij go gdzie chcesz i stuknij "Gotowe" w prawym górnym rogu.</li>
+    </ol>
+    <p>Po dodaniu widżet pokazuje godzinę i odliczanie następnego alarmu i sam się aktualizuje według alarmów ustawionych w apce (dane przez App Group, bez otwierania appki). Jeśli nie pokazuje danych, otwórz apkę raz, by zsynchronizować.</p>
+
+    <h2>Subskrypcja</h2>
+    <ul>
+        <li>Miesięczna/kwartalna/roczna; roczna 14 dni za darmo, auto, anulowanie</li>
+        <li>Automatyczne odnawianie, anulowanie w każdej chwili</li>
+        <li>Ustawienia → Apple ID → Subskrypcje</li>
+        <li>"Przywróć zakupy" odzyskuje subskrypcję</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>Q: Dzwoni w cichym?</h3>
+    <p>A: Tak. Systemowe alarmy AlarmKit dzwonią w cichym i Nie przeszkadzać.</p>
+    <h3>Q: Dzwoni po zamknięciu?</h3>
+    <p>A: Tak. Dzwonią na czas nawet przy zamkniętej apce.</p>
+    <h3>Q: Autoodnawianie?</h3>
+    <p>A: Automatycznie 24 h przed końcem przez Apple ID. Anuluj 24 h wcześniej.</p>
+    <h3>Q: Anulować?</h3>
+    <p>A: Ustawienia → Apple ID → Subskrypcje, wybierz appkę i "Anuluj". Korzyści do końca okresu.</p>
+    <h3>Q: Przywrócić?</h3>
+    <p>A: "Przywróć zakupy" sprawdza Apple ID i przywraca.</p>
+    <h3>Q: Darmowy okres?</h3>
+    <p>A: 14 dni dla nowych rocznych. Anulowanie bez opłaty. Potem płatna.</p>
+    <h3>Q: Dane wysyłane?</h3>
+    <p>A: Nie. Wszystko lokalnie (SwiftData).</p>
+    <h3>Q: Import własnego dzwonka?</h3>
+    <p>A: "Wybierz dzwonek" → "Import z Plików" (mp3/m4a/wav/aiff/caf). Lub udostępnianie → "Kopiuj do CalAlarm". Audio lokalnie w pętlę ≤30 s, dzwoni przy zamkniętej. Apple Music (DRM) nieimportowalne.</p>
+    <h3>Q: "Tylko te dni"?</h3>
+    <p>A: Edytor → "Data dzwonienia" → wybierz jedną lub więcej dat (lub szybki wybór miesiąc/rok). Kilka dat to Pro.</p>
+    <h3>Q: Widżet pokazuje "Brak alarmu" lub się nie odświeża</h3>
+    <p>A: Dane widżetu są synchronizowane z apką przez App Group. Otwórz apkę raz, by zsynchronizować, i wróć na ekran główny. Jeśli nadal się nie odświeża, przytrzymaj widżet i wybierz "Odśwież", lub usuń i dodaj ponownie. Widżet odświeża się sam co 15 minut; wymaga iOS 16 lub nowszego.</p>
+    <h3>Q: Jakie rozmiary obsługuje widżet?</h3>
+    <p>A: Mały, średni i duży: mały pokazuje tylko godzinę następnego alarmu; średni i duży dodają odliczanie i etykietę, a duży dodaje przypomnienie o zarządzaniu alarmem w apce.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Kontakt: lancewin@foxmail.com</p>
+</body>
+</html>

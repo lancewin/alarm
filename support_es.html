@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Soporte</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Soporte</h1>
+
+    <h2>Descripción de funciones</h2>
+    <h3>Alarma</h3>
+    <ul>
+        <li>Programación de alarma a nivel de sistema basada en AlarmKit; suena en modo silencioso y No Molestar</li>
+        <li>Gestión de varias alarmas: crear, editar, eliminar, activar, desactivar</li>
+        <li>Sonido por fecha: asigne a cada alarma una o varias fechas de sonido — suena exactamente los días que elija, a la hora fijada</li>
+        <li>Selección rápida de fechas: marque un mes o año de días laborables, fines de semana o todas las fechas con un toque</li>
+        <li>Posponer: intervalo configurable de 1-30 minutos y número máximo de posposiciones</li>
+        <li>Tono: tono predeterminado del sistema + tonos personalizados importados desde Archivos o la hoja de compartir (mp3/m4a/wav/aiff/caf, recortados a ≤30 s en bucle)</li>
+        <li>Vibración: se puede activar sola o junto con el tono</li>
+    </ul>
+    <h3>Alarma temporal</h3>
+    <ul>
+        <li>Recordatorio único que se elimina automáticamente tras sonar</li>
+        <li>Categorías predefinidas: reunión, venta flash, cocina, recogida, personalizado</li>
+        <li>Ideal para situaciones puntuales sin saturar la lista habitual</li>
+    </ul>
+    <h3>Widget</h3>
+    <ul>
+        <li>El widget de pantalla de inicio muestra la próxima alarma</li>
+        <li>Los datos se comparten vía App Group, visibles sin abrir la app</li>
+        <li>Disponible en tamaños pequeño, mediano y grande</li>
+    </ul>
+    <h3>Cómo añadir el widget a la pantalla de inicio</h3>
+    <ol>
+        <li>Desbloquea el iPhone y mantén pulsado un espacio vacío de la pantalla de inicio (o cualquier widget existente) hasta que los iconos tiemblen y entren en "modo de edición".</li>
+        <li>Pulsa el botón <span class="highlight">"+"</span> superior izquierdo para abrir la galería de widgets.</li>
+        <li>En el buscador escribe "<span class="highlight">CalAlarm</span>" (o desplázate hasta la app) y abre su lista de widgets.</li>
+        <li>Desliza bajo "Próxima alarma" para ver los tamaños <span class="highlight">pequeño／mediano／grande</span> y pulsa "Añadir widget".</li>
+        <li>El widget aparece flotante en la pantalla de inicio: arrástralo donde quieras y pulsa "Listo" arriba a la derecha.</li>
+    </ol>
+    <p>Una vez añadido, el widget muestra la hora y la cuenta atrás de la próxima alarma, y se actualiza solo según las alarmas que fijes en la app (los datos se sincronizan vía App Group, sin abrir la app). Si no muestra datos, abre la app una vez para sincronizar.</p>
+
+    <h2>Membresía</h2>
+    <ul>
+        <li>Sonido en varias fechas (Pro): defina varias fechas en la misma alarma</li>
+        <li>El plan gratuito permite hasta 5 alarmas; Pro desbloquea alarmas ilimitadas</li>
+        <li>Alarmas de fecha única, tonos personalizados, alarmas temporales, posponer, vibración y widget son gratis para todos</li>
+    </ul>
+
+    <h2>Gestión de suscripción</h2>
+    <ul>
+        <li>Planes mensual, trimestral y anual; el anual incluye 14 días de prueba gratis, se renueva automáticamente y se puede cancelar en cualquier momento</li>
+        <li>Las suscripciones se renuevan automáticamente y se pueden cancelar en cualquier momento</li>
+        <li>Gestionar en Ajustes → Apple ID → Suscripciones</li>
+        <li>Restaurar compras recupera la membresía adquirida</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>Q: ¿Suena en modo silencioso?</h3>
+    <p>A: Sí. Basada en alarmas de sistema AlarmKit, suena en silencio y No Molestar.</p>
+    <h3>Q: ¿Suena tras cerrar la app?</h3>
+    <p>A: Sí. Las alarmas de sistema suenan puntuales aunque la app esté totalmente cerrada.</p>
+    <h3>Q: ¿Cómo se renueva la suscripción?</h3>
+    <p>A: Se renueva automáticamente en las 24 horas previas al fin del periodo, cobrado con el método de pago de su Apple ID. Para evitarla, cancele al menos 24 horas antes.</p>
+    <h3>Q: ¿Cómo cancelo?</h3>
+    <p>A: Vaya a Ajustes → Apple ID → Suscripciones, seleccione la app y pulse "Cancelar suscripción". Mantiene los beneficios hasta el fin del periodo.</p>
+    <h3>Q: ¿Cómo restauro compras?</h3>
+    <p>A: Pulse "Restaurar compras" en la página de suscripción; el sistema verifica su Apple ID y restaura la membresía.</p>
+    <h3>Q: ¿Cómo se cuenta la prueba gratis?</h3>
+    <p>A: Los suscriptores anuales nuevos obtienen 14 días gratis. Puede cancelar en cualquier momento durante la prueba sin cargo. Tras la prueba comienza la suscripción de pago.</p>
+    <h3>Q: ¿Se suben mis datos a un servidor?</h3>
+    <p>A: No. Todos los datos de alarma se guardan solo en su dispositivo (SwiftData) y no se suben a ningún servidor.</p>
+    <h3>Q: ¿Cómo importo mi propio tono?</h3>
+    <p>A: En "Elegir tono", pulse "Importar desde Archivos" para seleccionar audio (mp3/m4a/wav/aiff/caf). También puede usar la hoja de compartir del sistema y elegir "Copiar a CalAlarm". El audio se transcodifica localmente a un tono en bucle de ≤30 s guardado en el dispositivo, por lo que suena aunque la app esté cerrada. Las canciones de Apple Music con DRM no se pueden importar.</p>
+    <h3>Q: ¿Cómo hago que suene "solo estos días"?</h3>
+    <p>A: En el editor de alarma, pulse "Fecha de sonido" para abrir el selector y marque una o varias fechas (o use la selección rápida de un mes/año de laborables, fines de semana o todas). Elegir varias fechas es función Pro.</p>
+    <h3>Q: El widget muestra "Sin alarma" o no se actualiza</h3>
+    <p>A: Los datos del widget se sincronizan con la app vía App Group. Abre la app una vez para sincronizar y vuelve a la pantalla de inicio. Si aún no se actualiza, mantén pulsado el widget y elige "Recargar", o quítalo y vuelve a añadirlo. El widget se actualiza solo cada 15 minutos; requiere iOS 16 o posterior.</p>
+    <h3>Q: ¿Qué tamaños admite el widget?</h3>
+    <p>A: Pequeño, mediano y grande: el pequeño solo muestra la hora de la próxima alarma; el mediano y grande añaden la cuenta atrás y la etiqueta, y el grande incluye un aviso para gestionar la alarma en la app.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">Contacto: lancewin@foxmail.com</p>
+</body>
+</html>

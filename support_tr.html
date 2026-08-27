@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalAlarm · Date Alarm Destek</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; color: #1c1c1e; }
+        h1 { font-size: 22px; } h2 { font-size: 18px; margin-top: 24px; } h3 { font-size: 16px; }
+        li { margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <h1>CalAlarm · Date Alarm Destek</h1>
+
+    <h2>Özellikler</h2>
+    <h3>Alarm</h3>
+    <ul>
+        <li>AlarmKit sistem planlaması; sessiz ve Rahatsız Etme'de çalar</li>
+        <li>Birden çok alarm: oluştur, düzenle, sil, aç, kapat</li>
+        <li>Tarihe göre çal: her alarm için bir veya daha fazla tarih — yalnızca seçilen günlerde çalar</li>
+        <li>Hızlı seçim: bir ay/yıl iş günü, hafta sonu veya tüm tarihler tek dokunuşla</li>
+        <li>Erteleme: 1–30 dk aralık ve maksimum ayarlanabilir</li>
+        <li>Zil: varsayılan + Dosyalar'dan özel (mp3/m4a/wav/aiff/caf, ≤30 sn döngü)</li>
+        <li>Titreşim: tek başına veya zille</li>
+    </ul>
+    <h3>Geçici alarm</h3>
+    <ul>
+        <li>Çaldıktan sonra silinen tek seferlik anımsatıcı</li>
+        <li>Kategoriler: toplantı, flash satış, yemek, karşılama, özel</li>
+        <li>Bir kerelik durumlar için</li>
+    </ul>
+    <h3>Widget</h3>
+    <ul>
+        <li>Ana ekranda sıradaki alarmı gösterir</li>
+        <li>Veri App Group ile paylaşılır, uygulama açılmadan görünür</li>
+        <li>Küçük, orta ve büyük boyutlarda mevcuttur</li>
+    </ul>
+    <h3>Widget'i ana ekrana ekleme</h3>
+    <ol>
+        <li>iPhone'un kilidini açın ve ana ekranda boş bir alana (veya mevcut bir widget'e) uzun basın; simgeler titreyip "düzenleme moduna" girinceye kadar bekleyin.</li>
+        <li>Sol üstteki <span class="highlight">"+"</span> düğmesine dokunarak widget galerisini açın.</li>
+        <li>Aramaya "<span class="highlight">CalAlarm</span>" yazın (veya uygulamaya kaydırın) ve widget listesini açın.</li>
+        <li>"Sıradaki alarm" altında kaydırarak <span class="highlight">küçük／orta／büyük</span> boyutları görün ve "Widget Ekle"ye dokunun.</li>
+        <li>Widget ana ekranda yüzen olarak belirir: istediğiniz yere sürükleyin ve sağ üstten "Bitti"ye dokunun.</li>
+    </ol>
+    <p>Eklendikten sonra widget, sıradaki alarmın saatini ve geri sayımını gösterir ve uygulamada ayarladığınız alarmlara göre kendiliğinden güncellenir (veri App Group ile, uygulama açmadan). Veri görünmüyorsa senkron için uygulamayı bir kez açın.</p>
+
+    <h2>Abonelik</h2>
+    <ul>
+        <li>Aylık/üç aylık/yıllık; yıllık 14 gün ücretsiz, otomatik, iptal edilebilir</li>
+        <li>Otomatik yenileme, istediğiniz zaman iptal</li>
+        <li>Ayarlar → Apple ID → Abonelikler</li>
+        <li>"Satın Alımları Geri Yükle" üyeliği döndürür</li>
+    </ul>
+
+    <h2>SSS</h2>
+    <h3>Q: Sessiz modda çalar mı?</h3>
+    <p>A: Evet. AlarmKit sistem alarmları sessiz ve Rahatsız Etme'de çalar.</p>
+    <h3>Q: Uygulama kapalıyken çalar mı?</h3>
+    <p>A: Evet. Sistem alarmları kapatılsa bile zamanında çalar.</p>
+    <h3>Q: Otomatik yenileme?</h3>
+    <p>A: Dönem bitiminden 24 saat önce Apple ID ile otomatik. 24 saat önce iptal edin.</p>
+    <h3>Q: İptal etme?</h3>
+    <p>A: Ayarlar → Apple ID → Abonelikler, uygulamayı seçin ve "Aboneliği İptal Et". Süre sonuna kadar haklar korunur.</p>
+    <h3>Q: Geri yükleme?</h3>
+    <p>A: "Satın Alımları Geri Yükle" Apple ID'yi doğrular ve üyeliği geri yükler.</p>
+    <h3>Q: Ücretsiz deneme?</h3>
+    <p>A: Yıllık yeni aboneler 14 gün ücretsiz. Deneme sırasında iptal ücretsiz. Sonra ücretli başlar.</p>
+    <h3>Q: Veri yüklenir mi?</h3>
+    <p>A: Hayır. Tümü yerel (SwiftData).</p>
+    <h3>Q: Kendi zilimi içe aktar?</h3>
+    <p>A: "Zil Seç" → "Dosyalardan İçe Aktar" (mp3/m4a/wav/aiff/caf). Veya paylaşım → "CalAlarm'a Kopyala". Ses yerelde ≤30 sn döngüye dönüştürülür, kapalıyken de çalar. Apple Music (DRM) içe aktarılamaz.</p>
+    <h3>Q: "Yalnızca bu günlerde çalsın"?</h3>
+    <p>A: Düzenleyici → "Çalma tarihi" → bir veya daha fazla tarih seçin (veya hızlı seçim ay/yıl). Birden çok tarih Pro'dur.</p>
+    <h3>Q: Widget "Alarm yok" gösteriyor veya güncellenmiyor</h3>
+    <p>A: Widget verileri App Group ile uygulamayla senkronlanır. Senkron için uygulamayı bir kez açıp ana ekrana dönün. Hâlâ güncellenmiyorsa widget'e uzun basıp "Yenile"yi seçin veya kaldırıp tekrar ekleyin. Widget her 15 dakikada bir kendiliğinden yenilenir; iOS 16 veya üstü gerekir.</p>
+    <h3>Q: Widget hangi boyutları destekler?</h3>
+    <p>A: Küçük, orta ve büyük: küçük yalnızca sıradaki alarm saatini gösterir; orta ve büyük geri sayımı ve etiketi, büyük ise uygulamada alarm yönetimi uyarısını ekler.</p>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #999;">İletişim: lancewin@foxmail.com</p>
+</body>
+</html>

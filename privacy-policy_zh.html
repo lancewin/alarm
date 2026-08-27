@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日历闹钟+ 隐私政策</title>
+    <title>日历闹钟·自定义日期响铃 隐私政策</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -46,7 +46,7 @@
     </style>
 </head>
 <body>
-    <h1>日历闹钟+ 隐私政策</h1>
+    <h1>日历闹钟·自定义日期响铃 隐私政策</h1>
     
     <p>本应用不收集、不上传、不分析您的任何个人数据。您的数据只属于您，只存在于您的设备上。</p>
     
@@ -62,7 +62,7 @@
     
     <h2>权限使用</h2>
     <ul>
-        <li><span class="highlight">闹钟权限（NSAlarmKitUsageDescription）</span>：用于通过 AlarmKit 实现系统级闹钟调度，确保在静音和勿扰模式下也能按时响铃</li>
+        <li><span class="highlight">闹钟权限（NSAlarmKitUsageDescription）</span>：用于实现系统级闹钟调度（iOS 26.1 及以上通过 AlarmKit，静音和勿扰模式下也能按时响铃；iOS 26.1 以下基于系统本地通知，静音或勿扰时可能仅弹出通知提示）</li>
         <li><span class="highlight">文件导入（系统「文件」App / 分享面板）</span>：选择自定义铃声时，应用会读取您主动选择的音频文件，并在设备本地转码、存储为闹钟铃声（存于 App 沙盒 Library/Sounds）。音频文件仅保存在您的设备上，绝不上传服务器，也不用于其他用途</li>
     </ul>
     
