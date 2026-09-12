@@ -12,14 +12,14 @@
 </head>
 <body>
     <h1>CalAlarm · Date Alarm Datenschutz</h1>
-    <p>Diese App erfasst, lädt oder analysiert keinerlei Ihrer persönlichen Daten. Ihre Daten gehören Ihnen und bleiben ausschließlich auf Ihrem Gerät.</p>
+    <p>Diese App erfasst, lädt oder analysiert keinerlei Ihrer persönlichen Daten. Ihre Daten gehören Ihnen und werden standardmäßig ausschließlich auf Ihrem Gerät gespeichert; wenn Sie bei iCloud angemeldet sind, werden Ihre Wecker-Einstellungen in Ihrem eigenen privaten iCloud-Speicher (von Apple bereitgestellt) gesichert, auf den wir keinen Zugriff haben.</p>
 
     <h2>Datenschutzversprechen</h2>
     <ul>
         <li>Keine Registrierung/Anmeldung —— kein Konto nötig</li>
         <li>Kein Server —— es werden keine Server betrieben, die Daten empfangen</li>
         <li>Keine personenbezogenen Daten —— kein Name/Telefon/Ort</li>
-        <li>Keine Datenuploads —— Daten nur lokal gespeichert</li>
+        <li>Keine Datenuploads zu unseren Servern —— Daten standardmäßig nur lokal, iCloud-Backups liegen in Ihrem eigenen privaten Bereich</li>
         <li>Keine Drittanbieter-Verfolgung —— keine Werbe/Analyse-SDKs</li>
         <li>Keine Werbung —— keine Werbe-Monetarisierung</li>
     </ul>
@@ -34,7 +34,7 @@
     <ul>
         <li>Zahlungen laufen über den Apple App Store; wir sehen oder speichern keine Zahlungsdaten</li>
         <li>Das Abo ist an Ihre Apple-ID gebunden; kein separates Kontosystem</li>
-        <li>Monatlich/vierteljährlich/jährlich; der Jahresplan enthält 14 Tage kostenlos, verlängert sich automatisch und ist jederzeit kündbar</li>
+        <li>Wöchentlich/monatlich sowie ein lebenslanger Einmalkauf; Abonnements verlängern sich automatisch und sind jederzeit kündbar</li>
     </ul>
 
     <h2>App Group Freigabe</h2>
@@ -47,8 +47,9 @@
     <h2>Datenspeicherung</h2>
     <ul>
         <li>Alle Alarmdaten werden lokal auf dem Gerät gespeichert (SwiftData)</li>
-        <li>Eigene Klingeltöne aus "Dateien" oder dem Teilen-Sheet werden lokal (Library/Sounds) gespeichert und bei Deinstallation entfernt</li>
-        <li>Bei Deinstallation werden alle lokalen Daten gelöscht</li>
+        <li>Optionale Synchronisierung: Wenn Sie bei iCloud angemeldet sind, werden Ihre Wecker-Einstellungen automatisch in Ihrem eigenen privaten iCloud-Schlüssel-Wert-Speicher (von Apple bereitgestellt, nur für Sie zugänglich, für uns nicht lesbar) gesichert. Zum Deaktivieren schalten Sie den iCloud-Zugriff dieser App unter Einstellungen → Apple-ID → iCloud aus</li>
+        <li>Eigene Klingeltöne aus "Dateien" oder dem Teilen-Sheet werden lokal (Library/Sounds) gespeichert, bei Deinstallation entfernt und nicht mit iCloud synchronisiert</li>
+        <li>Bei Deinstallation werden alle lokalen Daten gelöscht; iCloud-Backups können unter Einstellungen → Apple-ID → iCloud → Account-Speicher verwalten eingesehen und gelöscht werden</li>
     </ul>
 
     <h2>Drittanbieterdienste</h2>
